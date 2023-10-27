@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            align-items: center;
+            background-image: url('https://cdn.pixabay.com/animation/2023/07/13/14/23/14-23-05-802__340.png');
+            color: aliceblue;
+        }
+        h1{
+            background-color: rgb(64, 64, 138);
+            height: 50px;
+        }
+
+        td{
+            text-align: center;
+            padding: 10%;
+            background-color: #dddddd;
+            font-size: x-large;
+            color: black;
+        }
+        th{
+            text-align: center;
+            background-color: rgb(64, 64, 138);
+            padding: 3%;
+            width: 900px;
+            font-size: x-large;
+        }
+        button{
+            background-color: #dddddd;
+            padding: 1%;
+        }
+    </style>
+</head>
+<body align="center">
+<h1>Age Calculater</h1><br><br>
+<table align="center">
+    <tr class="tablerowStyle">
+        <th>Modify the values and click the Calculate buttton to use</th>
+    </tr>
+    <tr>
+        <td>
+            <form id="ageCalculatorForm">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" required>
+                <button type="button" id="calculateButton">Calculate</button>
+            </form>
+            <p id="result"></p>
+        </td>
+    </tr>
+</table>
+
+<script src="ageCalculator.js"></script>
+</body>
+</html>
